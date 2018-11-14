@@ -41,6 +41,8 @@ class DIYExampleViewController: UIViewController, FSCalendarDataSource, FSCalend
         calendar.appearance.eventSelectionColor = UIColor.white
         calendar.appearance.eventOffset = CGPoint(x: 0, y: -7)
         calendar.appearance.textAlignment = .right
+        
+        
         calendar.today = nil // Hide the today circle
         calendar.register(DIYCalendarCell.self, forCellReuseIdentifier: "cell")
 //        calendar.clipsToBounds = true // Remove top/bottom line
