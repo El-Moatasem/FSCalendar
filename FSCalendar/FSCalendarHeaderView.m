@@ -184,6 +184,7 @@
     FSCalendarAppearance *appearance = self.calendar.appearance;
     cell.titleLabel.font = appearance.headerTitleFont;
     cell.titleLabel.textColor = appearance.headerTitleColor;
+    cell.titleLabel.textAlignment = appearance.textAlignment;
     _calendar.formatter.dateFormat = appearance.headerDateFormat;
     BOOL usesUpperCase = (appearance.caseOptions & 15) == FSCalendarCaseOptionsHeaderUsesUpperCase;
     NSString *text = nil;
@@ -244,7 +245,6 @@
         titleLabel.numberOfLines = 0;
         [self.contentView addSubview:titleLabel];
         self.titleLabel = titleLabel;
-        self.titleLabel.textColor = UIColor.redColor;
     }
     return self;
 }
