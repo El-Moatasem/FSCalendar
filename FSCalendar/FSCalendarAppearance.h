@@ -169,6 +169,11 @@ typedef NS_OPTIONS(NSUInteger, FSCalendarCaseOptions) {
 @property (strong, nonatomic) UIColor  *selectionColor;
 
 /**
+ * The fill color of the shape for selected state.
+ */
+@property (assign, nonatomic) NSTextAlignment textAlignment;
+
+/**
  * The fill color of the shape for today.
  */
 @property (strong, nonatomic) UIColor  *todayColor;

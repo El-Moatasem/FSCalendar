@@ -244,6 +244,7 @@
         titleLabel.numberOfLines = 0;
         [self.contentView addSubview:titleLabel];
         self.titleLabel = titleLabel;
+        self.titleLabel.textColor = UIColor.redColor;
     }
     return self;
 }
